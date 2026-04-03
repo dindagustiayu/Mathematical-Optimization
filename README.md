@@ -26,7 +26,7 @@ In mathematics, optimization is the minimization or maximization of a function s
 - $x$ is the vector of _variables_, also called _unknowns_ or _parameters_.
   Variables, $x_1 \ x_2 \ x_3$ and so on, which are the __inputs__ things we can control. They abbreviated $x_n$ to refer to individuals or $x$ to refer to them as a group.
   
-- $f$ is the _objective function_, a function of x that we want to maximize or minimize. The objective function, $f(x)$, which is the __uotput__ we are trying to maximize or minimize.
+- $f$ is the _objective function_, a function of x that we want to maximize or minimize. The objective function, $f(x)$, which is the __output__ we are trying to maximize or minimize.
 
 - $c$ is the vector of _constraints_ that the unknowns must satisfy. This is a vector function of the variables $x$. The number of components in $c$ is the number of individual restrictions that we place on the variables. _Constraints_, which are equations that place limits on how big or small some variables can get.
 
@@ -36,7 +36,7 @@ In mathematics, optimization is the minimization or maximization of a function s
 
 The optimization problem can then be written as 
 <p align='center'>
-    $$ \begin{align} \min_{x \ \in \ R^n} \ f(x) \quad \mbox{subject \ to} \ \left \{\begin{array} \\ c_i (x) = 0, \quad i \ \in \ \mathcal{E} \\ c_i(x) \geq 0, \quad i \ \in \ \mathcal{I} \end{array} \right \} \end{align}$$
+    $$ \begin{align} \min_{x \ \in \ R^n} \ f(x) \quad \mbox{subject \ to} \ \left \{\begin{array} \\ c_i (x) = 0, \quad i \ \in \ \varepsilon \\ c_i(x) \geq 0, \quad i \ \in \ \imath \end{array} \right \} \end{align}$$
 </p>
     
 ## Example
@@ -61,5 +61,5 @@ Here $f$ and each $c_i$ are scalar-valued functions of the variables $x$, and $\
 
 
 <p align='center'>
-    $$\begin{align} f(x) &= (x_1 - 2)^2 + (x_2 -1)^2, \quad x =\left  [\begin{array} \ x_1 \\ x_2 \end{array} \right] \\ c(x) &= \left [\begin{array} \ c_1 (x) \\ c_2 (x) \end{array} \right] = \left [\begin{array} \ -x_1^2 + x_2 \\ -x_1 - x_2 + 2 \end{array} \right], \quad \mathcal{I}= \{ 1, \ 2 \}, \quad \mathcal{E} = 0  \end{align}$$
+    $$\begin{align} f(x) &= (x_1 - 2)^2 + (x_2 -1)^2, \quad x =\left  [\begin{array} \ x_1 \\ x_2 \end{array} \right] \\ c(x) &= \left [\begin{array} \ c_1 (x) \\ c_2 (x) \end{array} \right] = \left [\begin{array} \ -x_1^2 + x_2 \\ -x_1 - x_2 + 2 \end{array} \right], \quad \imath= \{ 1, \ 2 \}, \quad \varepsilon = 0  \end{align}$$
 </p>
