@@ -81,6 +81,10 @@ That is, the entry of the $i$-th row and the $j$-th column is
     $$(\mathbf{H_f})_{i, \ j} = \frac{\partial^2 f}{\partial x_i \ \partial x_j}$$
 </p>
 
+Reference:
+- [Jacobian Matrix](https://en.wikipedia.org/wiki/Jacobian_matrix_and_determinant#:~:text=The%20Jacobian%20matrix%20represents%20the,differential%20of%20f%20at%20x.)
+- [Hessian Matrix](https://en.wikipedia.org/wiki/Hessian_matrix)
+
 ## Example Multivariate scalar functions
 The general algorithm for the mInimization of a multivariate scalar function is `scipy.optimize.minimize`, which takes two mandatory arguments:
 
